@@ -2,6 +2,10 @@
 
 {% block content %}
 
+{% if msg %}
+<h1>{{msg}}</h1>
+{% endif %}
+
 {% for link in links %}
     <a href="{{link.url}}">{{ link.title }}</a>
     <br>
